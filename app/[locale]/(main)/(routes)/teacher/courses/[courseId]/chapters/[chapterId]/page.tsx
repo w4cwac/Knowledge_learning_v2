@@ -94,7 +94,7 @@ const page = async({ params } : Props) => {
                                 chapterId={params.chapterId}
                             />
                         </div>
-                        <div className="space-y-2">
+                        <div className="space-y-2 focus-visible:border-bleu">
                             <ChapterDescriptionForm
                                 initialData={chapter}
                                 courseId={params.courseId}

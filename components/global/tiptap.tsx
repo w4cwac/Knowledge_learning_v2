@@ -99,7 +99,7 @@ const Tiptap = ({ val }: { val: string }) => {
           </Toggle>
         </div>
       )}
-      <EditorContent placeholder="Write your description here." editor={editor} />
+      <EditorContent placeholder="Write your description " editor={editor} className=''/>
     </div>
   )
 }

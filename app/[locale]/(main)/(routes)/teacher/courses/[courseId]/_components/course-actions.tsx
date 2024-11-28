@@ -67,8 +67,9 @@ export const CourseActions = ({ courseId, isPublished, disabled} : Props) => {
                 <Button
                     size={"sm"}
                     disabled={isLoading}
+                    className="bg-bleu hover:bg-bleu/75"
                 >
-                    <Trash  className='h-4 w-4'/>
+                    <Trash  className='h-4 w-4 bg-'/>
                 </Button>
             </ConfirmModal>
         </div>

@@ -129,6 +129,7 @@ const ChapterAccessForm = ({ courseId, initialData, chapterId } : Props) => {
                                 <Button
                                     type='submit'
                                     disabled={!isValid || isSubmitting}
+                                    className='bg-bleu hover:bg-bleu/75 focus:border-bleu'
                                 >
                                     {isSubmitting ? <Loader2  className='w-4 h-4'/> : t("save")}
                                 </Button>

@@ -84,7 +84,7 @@ const AttachmentForm = ({ courseId, initialData } : Props) => {
                         {initialData.attachments.length > 0 && (
                             <div className='space-y-2'>
                                 {initialData.attachments.map((attachment) => (
-                                    <div key={attachment.id} className='flex items-center w-full p-3 rounded-md border-foreground text-foreground bg-primary/50'>
+                                    <div key={attachment.id} className='flex items-center w-full p-3 rounded-md border-foreground text-foreground bg-bleu/50'>
                                         <File className='h-4 w-4 mr-2 flex-shrink-0'/>
                                         <p className='text-xs line-clamp-1'>
                                             {attachment.url}

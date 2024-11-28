@@ -66,6 +66,7 @@ export const ChapterActions = ({ chapterId, courseId, isPublished, disabled} : P
                 onConfirm={onDelete}
             >
                 <Button
+                    className="bg-bleu hover:bg-bleu/75"
                     size={"sm"}
                     disabled={isLoading}
                 >

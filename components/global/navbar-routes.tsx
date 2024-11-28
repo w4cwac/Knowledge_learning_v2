@@ -33,7 +33,7 @@ const NavbarRoutes = () => {
                 !isPlayerPage && (
                     <div className='hidden md:flex p-4 items-center space-x-3'>
                         <Logo />
-                        <h1 className='font-bold text-2xl'>Udemy</h1>
+                        <h1 className='font-bold text-2xl'>Knowledge Learning</h1>
                     </div>
                 )
             }

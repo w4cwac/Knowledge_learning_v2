@@ -101,7 +101,7 @@ const ChapterList = ({ onEdit, onReorder, items } : Props) => {
                                                     {chapter.title}
                                                     <div className='ml-auto pr-2 flex items-center gap-x-2'>
                                                         {chapter.isFree && (
-                                                           <Badge>
+                                                           <Badge className='bg-bleu hover:bg-bleu/75'>
                                                                 {t("free")}
                                                            </Badge> 
                                                         )}

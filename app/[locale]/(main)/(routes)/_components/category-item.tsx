@@ -40,14 +40,14 @@ const CategoryItem = ({ label, value, icon:Icon } : Props) => {
     return (
     <button 
         className={cn(
-            "p-2 px-3 text-sm border rounded-full flex items-center gap-x-1 hover:bg-primary hover:text-primary-foreground hover:border-primary",
-            isSelected && "bg-primary text-primary-foreground border-primary"
+            "p-2 px-3 text-sm border rounded-full flex items-center gap-x-1  hover:bg-marine hover:text-primary-foreground hover:border-marine",
+            isSelected && "bg-bleu text-primary-foreground border-white"
         )}
         type="button"
         onClick={onClick}
     >
         {Icon && <Icon size={20} />}
-        <span className='truncate'>
+        <span className='truncate '>
             {label}
         </span>
     </button>

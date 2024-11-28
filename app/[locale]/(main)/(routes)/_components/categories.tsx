@@ -46,6 +46,7 @@ const Categories = ({ items } : Props) => {
             {
                 items.map((item) => (
                     <CategoryItem
+                        
                         key={item.id}
                         label={t(item.name as keyof typeof t)}
                         icon={iconMap[item.name]}

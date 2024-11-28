@@ -7,7 +7,7 @@ const Sidebar = () => {
     <div className='h-full flex flex-col border-r overflow-y-auto shadow-sm'>
         <div className='p-4 flex items-center space-x-3'>
             <Logo />
-            <h1 className='font-bold text-2xl'>Udemy</h1>
+            <h1 className='font-bold text-2xl'>Knowledge Learning</h1>
         </div>
         <div className='flex flex-col w-full'>
             <SidebarRoutes />
