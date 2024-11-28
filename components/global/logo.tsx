@@ -9,7 +9,7 @@ const Logo = () => {
             height={50}
             width={40}
             alt='logo'
-            src={'/logo.svg'}
+            src={'/logo_knowledge.jpg'}
             className='object-cover'
         />
     </Link>

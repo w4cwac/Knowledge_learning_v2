@@ -6,6 +6,14 @@ import { Toaster } from "@/components/ui/sonner"
 import ConfettiProvider from "@/providers/confetti-provider";
 import { ThemeProvider } from "@/providers/theme-provider";
 import { I18nProviderClient } from "@/locales/client";
+import localFont from "next/font/local"
+
+
+const comicSans = localFont({
+  src: "./fonts/comic-sans.woff",
+  variable: "--font-comic-sans",
+  weight: "100 900",
+});
 
 
 export const metadata: Metadata = {
@@ -25,6 +33,7 @@ export default async function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
+        className={`${comicSans.variable}  antialiased`}
       >
         
         <SessionProvider session={session}>
