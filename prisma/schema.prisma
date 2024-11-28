@@ -37,6 +37,8 @@ model User {
   stripeCustomer StripeCustomer?
 }
 
+alter table profiles enable row level security;
+
 
 model Course {
   id          String   @id @default(cuid())
