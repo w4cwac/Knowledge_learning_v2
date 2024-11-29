@@ -34,7 +34,7 @@ const CourseEnrollButton = ({ courseId, price } : Props) => {
     }
     return (
         <Button
-            className='w-full md:w-auto'
+            className='w-full md:w-auto bg-bleu hover:bg-bleu/75'
             onClick={onClick}
             disabled={loading}
         >

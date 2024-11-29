@@ -48,7 +48,7 @@ const   CourseCard = ({ id, title, imageUrl, chaptersLength, price, progress, ca
                             width="350"
                         />
                     </div>
-                    <Badge>
+                    <Badge className='bg-bleu hover:bg-bleu/75'>
                         {t(category as keyof typeof t)}
                     </Badge>
                     <div className='my-3 flex items-center gap-x-2 text-sm md:text-xs'>

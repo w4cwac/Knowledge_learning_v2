@@ -83,32 +83,32 @@ const ChapterList = ({ onEdit, onReorder, items } : Props) => {
                                             (provided) => (
                                                 <div
                                                     className={cn(
-                                                        "flex items-center gap-x-2 border border-popover bg-popover text-foreground rounded-md mb-4 text-sm",
-                                                        chapter.isPublished && "bg-primary/50 border-primary/50 text-primary-foreground"
+                                                        "flex items-center gap-x-2 border border-popover bg-popover text-foreground rounded-md mb-4 text-sm bg-bleu",
+                                                        chapter.isPublished && "bg-bleu border-bleu/50 text-primary-foreground"
                                                     )}
                                                     ref={provided.innerRef}
                                                     {...provided.draggableProps}
                                                 >
                                                     <div
                                                         className={cn(
-                                                            "px-2 py-3  border-r border-r-foreground/10 hover:bg-muted  rounded-l-md transition",
-                                                            chapter.isPublished && "bg-r-primary/40 border-r-primary/40"
+                                                            "px-2 py-3  border-r border-r-foreground/10  hover:bg-bleu/75  rounded-l-md transition",
+                                                            chapter.isPublished && "bg-bleu border-r-marine"
                                                         )}
                                                         {...provided.dragHandleProps}
                                                     >
                                                         <Grip className='w-5 h-5'/>
                                                     </div>
                                                     {chapter.title}
-                                                    <div className='ml-auto pr-2 flex items-center gap-x-2'>
+                                                    <div className='ml-auto pr-2 flex items-center gap-x-2 '>
                                                         {chapter.isFree && (
-                                                           <Badge className='bg-bleu hover:bg-bleu/75'>
+                                                           <Badge className='bg-vert hover:bg-vert/75'>
                                                                 {t("free")}
                                                            </Badge> 
                                                         )}
                                                         <Badge
                                                             className={cn(
-                                                                "bg-muted-foreground text-primary-foreground",
-                                                                chapter.isPublished && "bg-primary text-primary-foreground"
+                                                                "bg-muted-foreground text-primary-foreground bg-gris hover:bg-gris/75",
+                                                                chapter.isPublished && "bg-gris text-primary-foreground"
                                                             )}
                                                         >
                                                             {chapter.isPublished ? t("published") : t("draft")}

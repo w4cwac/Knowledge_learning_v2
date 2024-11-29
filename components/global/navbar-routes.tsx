@@ -46,7 +46,7 @@ const NavbarRoutes = () => {
             }
             {isTeacherPage || isPlayerPage && (
                 <Link href={"/"}>
-                    <Button>
+                    <Button className='bg-bleu hover:bg-bleu/75'>
                         <ExternalLink className="h-4 w-4 mr-2" />
                         {t('home_exit')}
                     </Button>
@@ -57,6 +57,7 @@ const NavbarRoutes = () => {
                 {isTeacherPage && (
                     <Link href={"/"}>
                         <Button
+                            className='bg-bleu hover:bg-bleu/75'
                             size={"sm"}
                             variant={"ghost"}
                         >
@@ -69,6 +70,7 @@ const NavbarRoutes = () => {
                     authUser && !isPlayerPage && (
                         <Link href={"/teacher/courses"}>
                             <Button
+                                
                                 size={"sm"}
                                 variant={"ghost"}
                             >
@@ -82,6 +84,7 @@ const NavbarRoutes = () => {
                     authUser && isTeacherPage && !isPlayerPage && (
                         <Link href={"/teacher/analytics"} className='hidden md:block'>
                             <Button
+                                
                                 size={"sm"}
                                 variant={"ghost"}
                             >
@@ -94,6 +97,7 @@ const NavbarRoutes = () => {
                     authUser && !isTeacherPage && !isPlayerPage && (
                         <Link href={"/analytics"} className='hidden md:block'>
                             <Button
+                                
                                 size={"sm"}
                                 variant={"ghost"}
                             >

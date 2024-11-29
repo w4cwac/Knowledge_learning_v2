@@ -132,6 +132,7 @@ const ChaptersForm = ({ courseId, initialData } : Props) => {
                             <Button
                                 type='submit'
                                 disabled={!isValid || isSubmitting}
+                                className='bg-bleu hover:bg-bleu/75'
                             >
                                 {isSubmitting ? <Loader2  className='w-4 h-4'/> : t("create")}
                             </Button>
