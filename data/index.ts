@@ -1139,7 +1139,7 @@ export const stripeCheckout = async (
         const lineItems: Stripe.Checkout.SessionCreateParams.LineItem[] = [
             {
                 price_data: {
-                    currency: "USD",
+                    currency: "EUR",
                     product_data: {
                         name: course.title,
                         description: course.description!,

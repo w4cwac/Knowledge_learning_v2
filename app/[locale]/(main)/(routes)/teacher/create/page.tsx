@@ -89,6 +89,7 @@ const page = () => {
                                 <Button
                                     type='submit'
                                     disabled={!isValid || isSubmitting}
+                                    className='bg-bleu hover:bg-bleu/75 hover:border-bleu'
                                 >
                                     {t("continue")}
                                 </Button>
